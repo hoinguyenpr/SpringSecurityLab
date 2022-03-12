@@ -1,10 +1,9 @@
 package com.hoinguyenpr.couponservice.repos;
 
-import com.hoinguyenpr.couponservice.model.Coupon;
+import com.hoinguyenpr.couponservice.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CouponRepo extends JpaRepository<Coupon, Long> {
-    Coupon findByCode(String code);
+public interface RoleRepo extends JpaRepository<Role, Long> {
 }
